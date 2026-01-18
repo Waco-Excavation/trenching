@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waco Excavation Services - Water Lines, Footings & Trenching</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-orange: #ea580c; /* Construction Orange */
+            --dark-blue: #0f172a;      /* Trustworthy Dark Blue */
+            --light-grey: #f1f5f9;
+            --white: #ffffff;
+        }
+
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        /* Utility Classes */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 15px 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .btn:hover {
+            background-color: #c2410c;
+        }
+
+
+        /* Header / Nav */
+        header {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+
+        .logo span {
+            color: var(--primary-orange);
+        }
+
+
+        .phone-nav {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-orange);
+            text-decoration: none;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            background-color: #333;
+            /* Placeholder for a dirt/excavator background image */
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            color: #e2e8f0;
+        }
+
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-grey);
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-bottom: 5px solid var(--primary-orange);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .service-card h3 {
+            color: var(--dark-blue);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+
+        /* Why Choose Us / Location */
+        .local-info {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+
+        .local-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+
+        .badge {
+            background: var(--dark-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+
+
+        /* Call to Action Bar */
+        .cta-bar {
+            background-color: var(--primary-orange);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+
+        .cta-bar h2 {
+            margin: 0 0 20px 0;
+        }
+
+
+        .btn-white {
+            background-color: white;
+            color: var(--primary-orange);
+        }
+        .btn-white:hover {
+            background-color: #f1f1f1;
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: #94a3b8;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-container { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Waco <span>Excavation</span></div>
+            <a href="tel:2543390919" class="phone-nav">📞 (254) 339-0919</a>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <h1>Professional Excavation<br>in Waco, Texas</h1>
+            <p>Expert digging, trenching, and site preparation. Reliable service for homeowners and contractors.</p>
+            <a href="tel:2543390919" class="btn">Call for a Free Estimate</a>
+        </div>
+    </section>
+
+
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We handle the dirty work so you don't have to.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>💧 New Water Lines</h3>
+                    <p>Installation of new residential and commercial water lines. We ensure proper depth and bedding to prevent future leaks and freezing issues.</p>
+                </div>
+
+
+                <div class="service-card">
+                    <h3>🏗️ Footings & Foundations</h3>
+                    <p>Precision digging for concrete footings. Whether it's for a new home, a shop, or a retaining wall, we dig to your engineer's specifications.</p>
+                </div>
+
+
+                <div class="service-card">
+                    <h3>🚜 Ditches & Trenching</h3>
+                    <p>Trenching for electrical, gas, or drainage solutions. We clean up our workspace and ensure proper grading for water runoff.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="local-info">
+        <div class="container">
+            <h2>Serving the Heart of Texas</h2>
+            <p>We are locally owned and operated, serving Waco and the surrounding McLennan County area.</p>
+            
+            <div class="local-badges">
+                <div class="badge">Local to Waco</div>
+                <div class="badge">Reliable Equipment</div>
+                <div class="badge">Free Estimates</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cta-bar">
+        <div class="container">
+            <h2>Ready to break ground?</h2>
+            <p>Contact us today to discuss your project.</p>
+            <a href="tel:2543390919" class="btn btn-white">Call (254) 339-0919</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Waco Excavation Services</p>
+            <p>Phone: (254) 339-0919</p>
+            <p>Serving Waco, Texas and surrounding areas.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
